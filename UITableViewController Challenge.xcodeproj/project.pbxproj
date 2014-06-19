@@ -14,13 +14,13 @@
 		04980102195330D300E5DCA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04980101195330D300E5DCA3 /* main.m */; };
 		04980106195330D300E5DCA3 /* TVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04980105195330D300E5DCA3 /* TVAppDelegate.m */; };
 		04980109195330D300E5DCA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04980107195330D300E5DCA3 /* Main.storyboard */; };
-		0498010C195330D300E5DCA3 /* TVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498010B195330D300E5DCA3 /* TVViewController.m */; };
 		0498010E195330D300E5DCA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498010D195330D300E5DCA3 /* Images.xcassets */; };
 		04980115195330D300E5DCA3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04980114195330D300E5DCA3 /* XCTest.framework */; };
 		04980116195330D300E5DCA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049800F5195330D300E5DCA3 /* Foundation.framework */; };
 		04980117195330D300E5DCA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049800F9195330D300E5DCA3 /* UIKit.framework */; };
 		0498011F195330D300E5DCA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0498011D195330D300E5DCA3 /* InfoPlist.strings */; };
 		04980121195330D300E5DCA3 /* UITableViewController_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04980120195330D300E5DCA3 /* UITableViewController_ChallengeTests.m */; };
+		0498012C1953A1DE00E5DCA3 /* TVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498012B1953A1DE00E5DCA3 /* TVTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		04980104195330D300E5DCA3 /* TVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVAppDelegate.h; sourceTree = "<group>"; };
 		04980105195330D300E5DCA3 /* TVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVAppDelegate.m; sourceTree = "<group>"; };
 		04980108195330D300E5DCA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0498010A195330D300E5DCA3 /* TVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVViewController.h; sourceTree = "<group>"; };
-		0498010B195330D300E5DCA3 /* TVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVViewController.m; sourceTree = "<group>"; };
 		0498010D195330D300E5DCA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04980113195330D300E5DCA3 /* UITableViewController ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableViewController ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04980114195330D300E5DCA3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0498011C195330D300E5DCA3 /* UITableViewController ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITableViewController ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		0498011E195330D300E5DCA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04980120195330D300E5DCA3 /* UITableViewController_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewController_ChallengeTests.m; sourceTree = "<group>"; };
+		0498012A1953A1DE00E5DCA3 /* TVTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTableViewController.h; sourceTree = "<group>"; };
+		0498012B1953A1DE00E5DCA3 /* TVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +112,11 @@
 		049800FB195330D300E5DCA3 /* UITableViewController Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				0498012A1953A1DE00E5DCA3 /* TVTableViewController.h */,
+				0498012B1953A1DE00E5DCA3 /* TVTableViewController.m */,
 				04980104195330D300E5DCA3 /* TVAppDelegate.h */,
 				04980105195330D300E5DCA3 /* TVAppDelegate.m */,
 				04980107195330D300E5DCA3 /* Main.storyboard */,
-				0498010A195330D300E5DCA3 /* TVViewController.h */,
-				0498010B195330D300E5DCA3 /* TVViewController.m */,
 				0498010D195330D300E5DCA3 /* Images.xcassets */,
 				049800FC195330D300E5DCA3 /* Supporting Files */,
 			);
@@ -252,7 +252,7 @@
 			files = (
 				04980106195330D300E5DCA3 /* TVAppDelegate.m in Sources */,
 				04980102195330D300E5DCA3 /* main.m in Sources */,
-				0498010C195330D300E5DCA3 /* TVViewController.m in Sources */,
+				0498012C1953A1DE00E5DCA3 /* TVTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
